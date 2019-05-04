@@ -1,0 +1,27 @@
+#include <iostream>
+#incluide <iomanip>
+#include <string>
+
+
+using namespace std;
+
+int main()
+{
+	int x, i, z;
+	int y = 1;
+	
+	for ( i = 0 ; i < SIZE ; i++ )
+	{
+		
+		z = x + y;
+		x = y;
+		y = z;
+		
+		cout << y << " ";
+	}
+}
+
+_getch();
+return 0;
+
+}
