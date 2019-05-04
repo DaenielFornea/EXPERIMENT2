@@ -1,0 +1,39 @@
+#include <iostream>
+#include <iomanip>
+#include <conio.h>
+
+int main()
+{
+
+int a, b, c;
+
+cout << "Enter the first number: "; 
+cin >> a;
+cout << "Enter the second number: "; 
+cin >> b;
+cout << "Enter the third number: "; 
+cin >> c; 
+
+if (a >= b && a >= c)
+{
+	cout << "The Largest of the three number is: " << a << endl; 
+    }
+else if (b >= a && b >= third)
+{
+	cout << "The Largest of the three number is: " << b << endl;
+    }
+
+else if (third >= first && third >= second)
+	{
+		cout << "The Largest of the three number is: " << c << endl;
+	    }
+else if (a == b && second == third)
+{
+	cout << "There is no Largest number among the three numbers."<< endl;
+    }
+
+_getch();
+return 0;
+
+}
+
