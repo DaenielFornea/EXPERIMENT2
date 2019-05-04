@@ -1,0 +1,36 @@
+#include <iostream>
+#include <iomanip>
+#include <conio.h>
+
+using namespace std;
+
+int main()
+{
+	double consumption, unpaid, cost, water;
+	const float charge = 35;
+	const float latecharge = 20;
+	
+	cout << "Enter How many Gallons of water used: "; 
+        cin >> water;
+	cout << " unpaid balance remaining last month: "; 
+        cin >> unpaid;
+	
+	if (unpaid > 0)
+	{
+		consumption = water * 1.10;
+		watercost = charge + consumption + unpaid + latecharge;
+		cout << " Your water bill is: P " << cost << endl;
+	}
+	
+	else 
+	{
+		consumption = water * 1.10;
+		cost = charge + consumption;
+		cout << "Your water bill is: P " << cost << endl;
+		
+	}
+	
+_getch();
+return 0;
+
+}
