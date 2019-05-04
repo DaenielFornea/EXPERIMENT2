@@ -1,0 +1,71 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+#include <conio.h>
+
+using namespace std; 
+
+int main()
+
+{
+
+floath hours;
+flot price;
+char Package;
+
+
+cout << " Enter the Package Service you want to avail? (ENTER A/B/C) " << endl; 
+cin >> Package; 
+cout << "how many hours did you use? " << endl;
+cin >> hours; 
+	
+switch (Package)
+		{
+		
+		case 'a':
+		case 'A':	
+		if (hours > 10)
+		{
+			price= 995.00 + (hours - 10 ) * 20 ;
+			cout << "This package is P995.00 per month for 10 hours and additional P 20.00 per exceeding hour" << endl;
+			cout << "Your Bill is: P" << price << endl;
+		}
+		
+		else 
+		{	
+			price = 995.00;
+			cout << "This package is P995.00 per motnth for 10 hours and additional P 20.00 per exceeding hour" << endl;
+			cout << "Your Bill is: P" << price << endl;
+		}
+ 		break;
+ 		
+ 		case'b':
+ 		case'B':
+ 		if (hours > 20)
+		{
+			price = 1495.00 + (hours - 20 ) * 10 ;
+			cout << "This package is P1495.00 per month for 20 hours and additional P 10.00 per exceeding hour" << endl;
+			cout << "Your Bill is: P" << price << endl;
+		}
+		
+		else 
+		{	
+			price = 1495.00;
+			cout << "This package is P1495.00 per month for 20 hours and additional P 10.00 per exceeding hour" << endl;
+			cout << "Your Bill is: P" << price << endl;
+		}
+		break;
+		
+		case'c':
+ 		case'C':
+ 			price = 1995.00;
+ 		      cout << "This package offers unlimited hour usage." << endl;
+			  cout << "Your Bill is: P" << price << endl;	
+		break;
+
+   }
+_getch();
+
+return 0;
+
+}
