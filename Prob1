@@ -14,9 +14,9 @@ flot price;
 char Package;
 
 
-cout << " Enter the Package Service you want to avail? (ENTER A/B/C) " << endl; 
+cout << " Enter the Package Service you want to avail? (ENTER A/B/C):  ";
 cin >> Package; 
-cout << "how many hours did you use? " << endl;
+cout << "how many hours did you use?:  "; 
 cin >> hours; 
 	
 switch (Package)
